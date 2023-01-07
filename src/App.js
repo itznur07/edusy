@@ -1,7 +1,9 @@
-function App() {
+import Home from "./Pages/Home";
+
+const App = () => {
   return (
     <div className="App">
-      <h1 className="text-red-800">Edusy</h1>
+      <Home />
     </div>
   );
 }
