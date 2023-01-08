@@ -10,7 +10,7 @@ const TopBar = () => {
           <div className='flex items-center justify-between space-x-24 py-6'>
             {/* sec 1 */}
             <div>
-              <h1 className='text-3xl font-bold uppercase text-white cursor-pointer'>Edusy</h1>
+              <h1 className='text-3xl font-bold uppercase text-[#1EB2A6] last:text-white cursor-pointer'>Edusy</h1>
               <p className='text-sm text-white'>ONLINE EDUCATION & LEARNING</p>
             </div>
             {/* sec 2 */}
