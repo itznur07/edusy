@@ -13,7 +13,7 @@ const Home = () => {
           width: "100%",
           height: "140vh",
           backgroundPosition: "center",
-          backgroundAttachment: "fixed"
+          backgroundAttachment: "fixed",
         }}>
       <TopBar/>
       <Navbar/>
