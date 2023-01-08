@@ -1,5 +1,6 @@
 import React from "react";
 import BannerContent from "../Components/BannerContent";
+import CourseCard from "../Components/CourseCard";
 import Navbar from "../Components/Navbar";
 import Summery from "../Components/Summery";
 import TopBar from "../Components/TopBar";
@@ -28,6 +29,8 @@ const Home = () => {
       <About />
       {/* Sammery */}
       <Summery />
+      {/* Course Cards */}
+      <CourseCard />
     </>
   );
 };
