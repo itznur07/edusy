@@ -16,7 +16,7 @@ const Navbar = () => {
                     <li>Contact</li>
                 </ul>
             </nav>
-            <div ><p className='text-base text-[#1eb2a6] text-lg font-bold rounded-md'>Get Certificate</p></div>
+            <div ><p className='text-md text-[#1eb2a6] text-xl font-bold'>Get Certificate</p></div>
         </div>
     </div>
     </>
