@@ -1,7 +1,7 @@
 import React from "react";
 import BannerContent from "../Components/BannerContent";
-import CourseCard from "../Components/CourseCard";
 import Navbar from "../Components/Navbar";
+import PopularCourse from "../Components/PopularCourse";
 import Summery from "../Components/Summery";
 import TopBar from "../Components/TopBar";
 import About from "./About";
@@ -29,8 +29,8 @@ const Home = () => {
       <About />
       {/* Sammery */}
       <Summery />
-      {/* Course Cards */}
-      <CourseCard />
+      {/* Popular Online courses */}
+      <PopularCourse />
     </>
   );
 };

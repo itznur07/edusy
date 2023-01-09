@@ -4,21 +4,21 @@ import React from "react";
 import authorImg from "../assets/images/author-1.jpg";
 // icons
 import { FaStar } from "react-icons/fa";
-import { TbFileCertificate } from "react-icons/tb";
 
-const CourseCard = () => {
+const CourseCard = ({icon , title}) => {
   return (
     <>
-      <div className='max-w-sm bg-white shadow-xl rounded-sm justify-center palce-content-center '>
+      <div className='w-1/3 sm:w-96 bg-white shadow-md rounded-sm justify-center palce-content-center '>
         {/* content */}
         <div className='py-7 px-7'>
           {/* card top */}
           <div className='flex space-x-5'>
-            <TbFileCertificate className='bg-[#1eb2a6] text-white rounded-full text-5xl' />
+            <span className=' text-[#1eb2a6] rounded-full text-5xl'>
+              {icon}
+            </span>
             <div className=''>
               <h1 className='text-2xl text-[#383838] font-semibold'>
-                Basic Fundamentals <br /> for Software <br />
-                Engineering
+                {title}
               </h1>
               {/* reating */}
               <div className='flex items-center space-x-1 text-[#1eb2a6] mt-4'>
