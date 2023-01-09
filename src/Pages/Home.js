@@ -1,5 +1,6 @@
 import React from "react";
 import BannerContent from "../Components/BannerContent";
+import Blogs from "../Components/Blogs";
 import BrowseCouse from "../Components/BrowseCouses";
 import Navbar from "../Components/Navbar";
 import PopularCourse from "../Components/PopularCourse";
@@ -37,6 +38,8 @@ const Home = () => {
       <BrowseCouse/>
       {/* Testimonial Component */}
       <Testimonial/>
+      {/* Our Blog Component */}
+      <Blogs />
     </>
   );
 };

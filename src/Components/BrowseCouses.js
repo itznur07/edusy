@@ -12,12 +12,12 @@ import { TbPolygon } from "react-icons/tb";
 const BrowseCouse = () => {
   return (
     <>
-      <div className='h-screen '>
+      <div className='h-screen'>
         <div className='mx-28'>
           {/* content */}
-          <div>
+          <div className="">
             {/* content heading */}
-            <div className='mt-16 text-center space-y-4'>
+            <div className='text-center space-y-4 '>
               <h4 className='text-md text-[#1eb2a6] font-bold uppercase'>
                 OUR COURSES
               </h4>

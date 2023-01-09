@@ -47,7 +47,7 @@ const TopBar = () => {
                 <i className='fab fa-twitter'></i>
               </span>
               <span className='bg-[#fff] hover:bg-[#1EB2A6] bg-opacity-30 hover:text-white text-[#1EB2A6] px-4 py-3 rounded-full transition ease-linear duration-300 '>
-                
+                <i className="fab fa-instagram"></i>
               </span>
             </div>
           </div>
