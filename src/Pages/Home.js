@@ -4,6 +4,7 @@ import BrowseCouse from "../Components/BrowseCouses";
 import Navbar from "../Components/Navbar";
 import PopularCourse from "../Components/PopularCourse";
 import Summery from "../Components/Summery";
+import Testimonial from "../Components/Testimonial";
 import TopBar from "../Components/TopBar";
 import About from "./About";
 
@@ -34,6 +35,8 @@ const Home = () => {
       <PopularCourse />
       {/* Browse Online Course Design */}
       <BrowseCouse/>
+      {/* Testimonial Component */}
+      <Testimonial/>
     </>
   );
 };
