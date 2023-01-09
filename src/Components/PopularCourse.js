@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import CourseCard from "./CourseCard";
+
 // icons
 import { FaFigma, FaWordpress } from "react-icons/fa";
 import { SiAdobephotoshop, SiBmcsoftware, SiVisualstudiocode } from "react-icons/si";
@@ -15,6 +16,9 @@ const PopularCourse = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    rtl: true
   };
   return (
     <>
@@ -23,12 +27,12 @@ const PopularCourse = () => {
           {/* content */}
           <div>
             {/* content heading */}
-            <div className='mt-28 text-center space-y-4'>
+            <div className='text-center space-y-4'>
               <h4 className='text-md text-[#1eb2a6] font-bold uppercase'>
-                OUR COURSES
+                COURSES
               </h4>
-              <h1 className='text-5xl text-[#323232] font-semibold'>
-                Explore Our Popular Online Courses
+              <h1 className='text-4xl text-[#323232] font-bold'>
+              Browse Our Online Courses
               </h1>
             </div>
             {/* content heading */}
