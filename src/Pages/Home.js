@@ -2,6 +2,7 @@ import React from "react";
 import BannerContent from "../Components/BannerContent";
 import Blogs from "../Components/Blogs";
 import BrowseCouse from "../Components/BrowseCouses";
+import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import Newsletter from "../Components/Newsletter";
 import PopularCourse from "../Components/PopularCourse";
@@ -46,6 +47,8 @@ const Home = () => {
       <Pricing/>
       {/* Newsletter component design */}
       <Newsletter />
+      {/* Footer  */}
+      <Footer />
     </>
   );
 };
