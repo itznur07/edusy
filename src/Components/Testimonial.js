@@ -24,8 +24,8 @@ const Testimonial = () => {
 
   return (
     <>
-      <div className='h-screen mt-24'>
-        <div className='mx-28 '>
+      <div className='h-screen'>
+        <div className='mx-28 mt-24'>
           {/* content */}
           <div>
             {/* content heading */}

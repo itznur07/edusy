@@ -54,7 +54,7 @@ const BrowseCouse = () => {
 const BrowseCourseCard = ({icon , title, courses}) => {
   return (
     <>
-      <div className='w-64 h-auto cursor-pointer group bg-white hover:bg-[#1eb2a6] shadow-md hover:shadow-none rounded-sm px-4 py-4 transition ease-linear duration-500'>
+      <div className='w-64 h-auto cursor-pointer group bg-white hover:bg-[#1eb2a6] shadow hover:shadow-none rounded-sm px-4 py-4 transition ease-linear duration-500'>
         <div className='flex mt-10 flex-col text-center items-center justify-center place-content-center space-y-6 '>
           <span className='text-[#1eb2a6] text-5xl group-hover:text-white'>
             {icon}

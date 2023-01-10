@@ -4,6 +4,7 @@ import Blogs from "../Components/Blogs";
 import BrowseCouse from "../Components/BrowseCouses";
 import Navbar from "../Components/Navbar";
 import PopularCourse from "../Components/PopularCourse";
+import Pricing from "../Components/Pricing";
 import Summery from "../Components/Summery";
 import Testimonial from "../Components/Testimonial";
 import TopBar from "../Components/TopBar";
@@ -40,6 +41,8 @@ const Home = () => {
       <Testimonial/>
       {/* Our Blog Component */}
       <Blogs />
+      {/* Our Pricing Component */}
+      <Pricing/>
     </>
   );
 };

@@ -22,7 +22,7 @@ const PopularCourse = () => {
   };
   return (
     <>
-      <div className='h-screen'>
+      <div className='h-screen '>
         <div className='mx-28'>
           {/* content */}
           <div>
