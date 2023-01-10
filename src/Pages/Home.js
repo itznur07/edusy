@@ -1,4 +1,5 @@
 import React from "react";
+import About from "../Components/About";
 import BannerContent from "../Components/BannerContent";
 import Blogs from "../Components/Blogs";
 import BrowseCouse from "../Components/BrowseCouses";
@@ -10,7 +11,6 @@ import Pricing from "../Components/Pricing";
 import Summery from "../Components/Summery";
 import Testimonial from "../Components/Testimonial";
 import TopBar from "../Components/TopBar";
-import About from "./About";
 
 const Home = () => {
   return (
@@ -21,8 +21,7 @@ const Home = () => {
           backgroundImage: `url("https://preview.colorlib.com/theme/academia/images/bg_1.jpg")`,
           backgroundSize: "cover",
           width: "100%",
-          height: "140vh",
-          backgroundPosition: "center",
+          height: "100vh",
           backgroundAttachment: "fixed",
         }}
       >
