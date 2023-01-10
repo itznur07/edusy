@@ -3,6 +3,7 @@ import BannerContent from "../Components/BannerContent";
 import Blogs from "../Components/Blogs";
 import BrowseCouse from "../Components/BrowseCouses";
 import Navbar from "../Components/Navbar";
+import Newsletter from "../Components/Newsletter";
 import PopularCourse from "../Components/PopularCourse";
 import Pricing from "../Components/Pricing";
 import Summery from "../Components/Summery";
@@ -43,6 +44,8 @@ const Home = () => {
       <Blogs />
       {/* Our Pricing Component */}
       <Pricing/>
+      {/* Newsletter component design */}
+      <Newsletter />
     </>
   );
 };
