@@ -8,7 +8,7 @@ import { FaStar } from "react-icons/fa";
 const CourseCard = ({icon , title}) => {
   return (
     <>
-      <div className='w-1/3 sm:w-96 bg-white shadow-sm rounded-sm justify-center palce-content-center '>
+      <div className='w-1/3 sm:w-96 bg-white shadow-sm rounded-sm justify-center palce-content-center mt-5 '>
         {/* content */}
         <div className='py-7 px-7'>
           {/* card top */}

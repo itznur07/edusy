@@ -30,7 +30,7 @@ const AboutPage = () => {
         <div className='absolute inset-0 flex flex-col items-center justify-center space-y-3'>
           <span className='text-[#f8f8f8] text-md font-bold cursor-pointer'>
             <Link to='/'>
-              <a href='' className='hover:text-[#1eb2a6]'>
+              <a href='home' className='hover:text-[#1eb2a6]'>
                 Home
               </a>
             </Link>{" "}
