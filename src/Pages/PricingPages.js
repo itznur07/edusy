@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Footer from '../Components/Footer';
 import Navbar from "../Components/Navbar";
 import PricingCard from "../Components/PricingCard";
 import TopBar from "../Components/TopBar";
 
 import bg2 from "../assets/images/image_1.jpg";
+import RoutePageHead from "../Components/RoutePageHead";
 
 const PricingPages = () => {
   return (
@@ -20,23 +21,9 @@ const PricingPages = () => {
             backgroundAttachment: "fixed",
           }}
         >
-          <div>
             <TopBar />
             <Navbar />
-          </div>
-          <div className='absolute inset-0 flex flex-col items-center justify-center space-y-3'>
-            <span className='text-[#f8f8f8] text-md font-bold cursor-pointer'>
-              <Link to='/'>
-                <a href='home' className='hover:text-[#1eb2a6]'>
-                  Home
-                </a>
-              </Link>{" "}
-              Pricing{" "}
-            </span>
-            <h1 className='text-7xl text-[#ffffff] font-semibold'>
-              Pricing Packages
-            </h1>
-          </div>
+            <RoutePageHead heading="Pricing Packages" subheading="pricing" />
         </div>
         <div>
           <div className='mx-24 mt-24 flex items-center justify-between py-6 pb-6'>
@@ -61,6 +48,10 @@ const PricingPages = () => {
               desc='Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'
             />
           </div>
+        </div>
+        {/* footer */}
+        <div>
+          <Footer/>
         </div>
       </div>
     </>

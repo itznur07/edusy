@@ -1,15 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // import needed component
 import CourseCard from "../Components/CourseCard";
+import Footer from '../Components/Footer';
 import Navbar from "../Components/Navbar";
+import RoutePageHead from "../Components/RoutePageHead";
 import TopBar from "../Components/TopBar";
 
 // import needed images
 import bg2 from "../assets/images/image_1.jpg";
 
-// icons
+
 // icons
 import { FaFigma, FaWordpress } from "react-icons/fa";
 import {
@@ -32,16 +33,8 @@ const AllCourses = () => {
       >
         <TopBar />
         <Navbar />
-        <div className='absolute inset-0 flex flex-col items-center justify-center space-y-3'>
-          <span className='text-[#f8f8f8] text-md font-bold cursor-pointer'>
-            <Link to='/'>
-              <a href='home' className='hover:text-[#1eb2a6]'>
-                Home
-              </a>
-            </Link>{" "}
-            Courses{" "}
-          </span>
-          <h1 className='text-7xl text-[#ffffff] font-semibold'>All Courses</h1>
+        <div >
+          <RoutePageHead heading="All Courses" subheading="courses" />
         </div>
       </div>
       <div className='pb-20'>
@@ -107,6 +100,8 @@ const AllCourses = () => {
             &rarr;
           </div>
         </div>
+        {/* Footer */}
+        <Footer />
       </div>
     </>
   );

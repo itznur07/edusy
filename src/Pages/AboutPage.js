@@ -1,13 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
-// import components
 import Navbar from "../Components/Navbar";
 import TopBar from "../Components/TopBar";
+// import components
+import Footer from "../Components/Footer";
 
-// import needed images
 import bg2 from "../assets/images/image_1.jpg";
 import About from "../Components/About";
+import RoutePageHead from "../Components/RoutePageHead";
 
 const AboutPage = () => {
   return (
@@ -20,27 +19,18 @@ const AboutPage = () => {
           height: "100vh",
           backgroundAttachment: "fixed",
         }}
-        className='relative'
       >
-        <div>
-          <TopBar />
-          <Navbar />
-        </div>
-
-        <div className='absolute inset-0 flex flex-col items-center justify-center space-y-3'>
-          <span className='text-[#f8f8f8] text-md font-bold cursor-pointer'>
-            <Link to='/'>
-              <a href='home' className='hover:text-[#1eb2a6]'>
-                Home
-              </a>
-            </Link>{" "}
-            About{" "}
-          </span>
-          <h1 className='text-7xl text-[#ffffff] font-semibold'>About us</h1>
+        <TopBar />
+        <Navbar />
+        
+        <div >
+          <RoutePageHead heading="About us" subheading="about"  />
         </div>
       </div>
-      <div>
         <About />
+      <hr />
+      <div className='mt-20'>
+        <Footer />
       </div>
     </>
   );

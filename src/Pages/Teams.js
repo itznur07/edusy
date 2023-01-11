@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Footer from '../Components/Footer';
 import Navbar from "../Components/Navbar";
 import TeamCard from "../Components/TeamCard";
 import TopBar from "../Components/TopBar";
@@ -10,6 +10,7 @@ import team_1 from "../assets/images/team-1.jpg";
 import team_2 from "../assets/images/team-2.jpg";
 import team_3 from "../assets/images/team-3.jpg";
 import team_4 from "../assets/images/team-4.jpg";
+import RoutePageHead from "../Components/RoutePageHead";
 
 const Teams = () => {
   return (
@@ -25,21 +26,10 @@ const Teams = () => {
           }}
           className='relative'
         >
-          <div>
+
             <TopBar />
             <Navbar />
-          </div>
-          <div className='absolute inset-0 flex flex-col items-center justify-center space-y-3'>
-            <span className='text-[#f8f8f8] text-md font-bold cursor-pointer'>
-              <Link to='/'>
-                <a href='home' className='hover:text-[#1eb2a6]'>
-                  Home
-                </a>
-              </Link>{" "}
-              About{" "}
-            </span>
-            <h1 className='text-7xl text-[#ffffff] font-semibold'>Our Teams</h1>
-          </div>
+            <RoutePageHead heading="Our Teams" subheading="team" />
         </div>
         {/* our teams */}
         <div className='mx-24 my-24 flex flex-wrap justify-between'>
@@ -84,6 +74,10 @@ const Teams = () => {
             title='DEVELOPER AND LEAD INSTRUCTOR'
           />
         </div>
+      </div>
+      {/* Footer */}
+      <div>
+        <Footer/>
       </div>
     </>
   );

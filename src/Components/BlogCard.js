@@ -6,7 +6,7 @@ import { SlCalender } from 'react-icons/sl';
 
 const BlogCard = ({ image, title, desc }) => {
   return (
-    <div className='shadow-md w-auto h-auto pb-4 rounded-md'>
+    <div className='shadow-md w-96 rounded-md mt-16'>
       <img src={image} alt='not found' />
       <div className="mx-6 my-6">
         <div className='flex items-center justify-between space-x-2 my-2'>
