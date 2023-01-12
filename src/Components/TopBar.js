@@ -1,19 +1,16 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const TopBar = () => {
   return (
     <>
-      <div
-        
-      >
-        <div className='mx-24'>
-          <div className='flex items-center justify-between space-x-24 py-6'>
+          <div className='mx-24 items-center justify-between space-x-24 py-6 lg:flex min-sm:hidden max-md:hidden'>
             {/* sec 1 */}
             <div>
-              <Link to="/">
-              <h1 className='text-3xl font-bold uppercase text-[#1EB2A6] last:text-white cursor-pointer'>Edusy</h1>
-              </Link>
+              <h1 className='text-3xl font-bold uppercase text-[#1EB2A6] last:text-white cursor-pointer'>
+                <Link to='/'>Educy</Link>
+              </h1>
+
               <p className='text-sm text-white'>ONLINE EDUCATION & LEARNING</p>
             </div>
             {/* sec 2 */}
@@ -50,12 +47,10 @@ const TopBar = () => {
                 <i className='fab fa-twitter'></i>
               </span>
               <span className='bg-[#fff] hover:bg-[#1EB2A6] bg-opacity-30 hover:text-white text-[#1EB2A6] px-4 py-3 rounded-full transition ease-linear duration-300 '>
-                <i className="fab fa-instagram"></i>
+                <i className='fab fa-instagram'></i>
               </span>
             </div>
           </div>
-        </div>
-      </div>
     </>
   );
 };

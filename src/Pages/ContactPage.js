@@ -1,26 +1,21 @@
 import React from "react";
-import bg2 from "../assets/images/image_1.jpg";
-import Navbar from "../Components/Navbar";
-import RoutePageHead from "../Components/RoutePageHead";
-import TopBar from "../Components/TopBar";
+import ContactForm from "../Components/ContactForm";
+import Footer from "../Components/Footer";
+import MapContainer from "../Components/MapContainer";
+import Newsletter from "../Components/Newsletter";
+import RouteHead from "./RouteHead";
 
 const ContactPage = () => {
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url(${bg2})`,
-          backgroundSize: "cover",
-          width: "100%",
-          height: "100vh",
-          backgroundAttachment: "fixed",
-        }}
-      >
-        {/* contact pages */}
-        <TopBar />
-        <Navbar />
-        <RoutePageHead heading='Contact us' subheading='contact' />
-        {/* contact pages */}
+      <RouteHead headingtext='Contact us' subheadingtext='contact' />
+      <div className="flex justify-between mx-24">
+        <ContactForm />
+        <MapContainer />
+      </div>
+      <div className='mt-28'>
+        <Newsletter />
+        <Footer />
       </div>
     </>
   );

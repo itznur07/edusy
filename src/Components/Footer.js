@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 // import images
 import image1 from "../assets/images/image_1.jpg";
@@ -18,7 +19,7 @@ const Footer = () => {
           <div>
             <div>
               <h1 className='text-3xl font-bold uppercase text-[#1EB2A6] last:text-white cursor-pointer'>
-                Edusy
+                <Link to="/">Edusy</Link>
               </h1>
               <p className='text-sm text-[#1EB2A6]'>
                 ONLINE EDUCATION & LEARNING
@@ -51,31 +52,31 @@ const Footer = () => {
               <div className='space-x-2'>
                 <span className='text-[#1EB2A6] text-sm'>&rarr;</span>{" "}
                 <span className='text-md text-[#393939] font-medium'>
-                  About us
+                  <Link to="/about">About us</Link>
                 </span>
               </div>
               <div className='space-x-2'>
                 <span className='text-[#1EB2A6] text-sm'>&rarr;</span>{" "}
                 <span className='text-md text-[#393939] font-medium'>
-                  Services
+                <Link>Servics</Link>
                 </span>
               </div>
               <div className='space-x-2'>
                 <span className='text-[#1EB2A6] text-sm'>&rarr;</span>{" "}
                 <span className='text-md text-[#393939] font-medium'>
-                  Courses
+                <Link to="/courses">Courses</Link>
                 </span>
               </div>
               <div className='space-x-2'>
                 <span className='text-[#1EB2A6] text-sm'>&rarr;</span>{" "}
                 <span className='text-md text-[#393939] font-medium'>
-                  Blogs
+                <Link to="/blogs">Blogs</Link>
                 </span>
               </div>
               <div className='space-x-2'>
                 <span className='text-[#1EB2A6] text-sm'>&rarr;</span>{" "}
                 <span className='text-md text-[#393939] font-medium'>
-                  Contact us
+                <Link to="/contact">Contact us</Link>
                 </span>
               </div>
             </div>
@@ -89,13 +90,13 @@ const Footer = () => {
               <div className='space-x-2'>
                 <span className='text-[#1EB2A6] text-sm'>&rarr;</span>{" "}
                 <span className='text-md text-[#393939] font-medium'>
-                  Contact us
+                <Link to="/contact">Contact us</Link>
                 </span>
               </div>
               <div className='space-x-2'>
                 <span className='text-[#1EB2A6] text-sm'>&rarr;</span>{" "}
                 <span className='text-md text-[#393939] font-medium'>
-                  Pricing
+                <Link to="/pricing">Pricing</Link>
                 </span>
               </div>
               <div className='space-x-2'>

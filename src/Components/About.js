@@ -1,6 +1,6 @@
 import React from "react";
 // import image
-const aboutImg = "https://preview.colorlib.com/theme/academia/images/about.jpg"
+import aboutImg from '../assets/images/about.jpg';
 // import icons
 
 const About = () => {

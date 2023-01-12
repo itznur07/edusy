@@ -2,14 +2,8 @@ import React from "react";
 
 // import needed component
 import CourseCard from "../Components/CourseCard";
-import Footer from '../Components/Footer';
-import Navbar from "../Components/Navbar";
-import RoutePageHead from "../Components/RoutePageHead";
-import TopBar from "../Components/TopBar";
-
-// import needed images
-import bg2 from "../assets/images/image_1.jpg";
-
+import Footer from "../Components/Footer";
+import RouteHead from "./RouteHead";
 
 // icons
 import { FaFigma, FaWordpress } from "react-icons/fa";
@@ -18,25 +12,14 @@ import {
   SiBmcsoftware,
   SiVisualstudiocode
 } from "react-icons/si";
+import Newsletter from "../Components/Newsletter";
 
 const AllCourses = () => {
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url(${bg2})`,
-          backgroundSize: "cover",
-          width: "100%",
-          height: "100vh",
-          backgroundAttachment: "fixed",
-        }}
-      >
-        <TopBar />
-        <Navbar />
-        <div >
-          <RoutePageHead heading="All Courses" subheading="courses" />
-        </div>
-      </div>
+      {/* page head */}
+      <RouteHead headingtext='All Courses' subheadingtext='courses' />
+      {/* page head */}
       <div className='pb-20'>
         <div className='mx-24 flex items-center justify-between flex-wrap py-24'>
           <CourseCard
@@ -101,7 +84,10 @@ const AllCourses = () => {
           </div>
         </div>
         {/* Footer */}
+        <div className="mt-28">
+        <Newsletter/>
         <Footer />
+        </div>
       </div>
     </>
   );

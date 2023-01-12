@@ -1,4 +1,5 @@
 import React from "react";
+import bg from '../assets/images/bg_1.jpg';
 import About from "../Components/About";
 import BannerContent from "../Components/BannerContent";
 import Blogs from "../Components/Blogs";
@@ -12,13 +13,15 @@ import Summery from "../Components/Summery";
 import Testimonial from "../Components/Testimonial";
 import TopBar from "../Components/TopBar";
 
+
+
 const Home = () => {
   return (
     <>
       {/* TopBar and Navbar */}
       <div
         style={{
-          backgroundImage: `url("https://preview.colorlib.com/theme/academia/images/bg_1.jpg")`,
+          backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
           width: "100%",
           height: "100vh",
