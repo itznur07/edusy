@@ -2,21 +2,18 @@ import { GoogleApiWrapper, Map } from "google-maps-react";
 import React from "react";
 
 const MapContainer = (props) => {
-  console.log(props);
   return (
-    <>
-      <div className=''>
-        <Map
-          google={props.google}
-          style={{ width: "30%", height: "50%" }}
-          zoom={10}
-          initialCenter={{
-            lat: 23.810331,
-            lng: 90.412521,
-          }}
-        />
-      </div>
-    </>
+    <div className="">
+      <Map
+        google={props.google}
+        style={{ width: "50%", height: "60%" }}
+        zoom={10}
+        initialCenter={{
+          lat: 23.810331,
+          lng: 90.412521,
+        }}
+      />
+    </div>
   );
 };
 

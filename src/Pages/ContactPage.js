@@ -9,9 +9,13 @@ const ContactPage = () => {
   return (
     <>
       <RouteHead headingtext='Contact us' subheadingtext='contact' />
-      <div className="flex justify-between mx-24">
-        <ContactForm />
-        <MapContainer />
+      <div className='flex gap-5 mx-24'>
+        <div className='mt-20'>
+          <ContactForm />
+        </div>
+        <div className='mt-20'>
+          <MapContainer />
+        </div>
       </div>
       <div className='mt-28'>
         <Newsletter />
