@@ -1,5 +1,5 @@
 import React from "react";
-import bg from '../assets/images/bg_1.jpg';
+import bg from "../assets/images/bg_1.jpg";
 import About from "../Components/About";
 import BannerContent from "../Components/BannerContent";
 import Blogs from "../Components/Blogs";
@@ -13,11 +13,18 @@ import Summery from "../Components/Summery";
 import Testimonial from "../Components/Testimonial";
 import TopBar from "../Components/TopBar";
 
-
+import { motion, useScroll, useSpring } from "framer-motion";
 
 const Home = () => {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   return (
-    <>
+    <div>
       {/* TopBar and Navbar */}
       <div
         style={{
@@ -28,6 +35,7 @@ const Home = () => {
           backgroundAttachment: "fixed",
         }}
       >
+        <motion.li style={{ scaleX }} className='progress-bar'></motion.li>
         {/* header */}
         <TopBar />
         <Navbar />
@@ -40,18 +48,18 @@ const Home = () => {
       {/* Popular Online courses */}
       <PopularCourse />
       {/* Browse Online Course Design */}
-      <BrowseCouse/>
+      <BrowseCouse />
       {/* Testimonial Component */}
-      <Testimonial/>
+      <Testimonial />
       {/* Our Blog Component */}
       <Blogs />
       {/* Our Pricing Component */}
-      <Pricing/>
+      <Pricing />
       {/* Newsletter component design */}
       <Newsletter />
       {/* Footer  */}
       <Footer />
-    </>
+    </div>
   );
 };
 
