@@ -1,7 +1,6 @@
 import React from "react";
 import ContactForm from "../Components/ContactForm";
 import Footer from "../Components/Footer";
-import MapContainer from "../Components/MapContainer";
 import Newsletter from "../Components/Newsletter";
 import RouteHead from "./RouteHead";
 
@@ -12,9 +11,6 @@ const ContactPage = () => {
       <div className='flex gap-5 mx-24'>
         <div className='mt-20'>
           <ContactForm />
-        </div>
-        <div className='mt-20'>
-          <MapContainer />
         </div>
       </div>
       <div className='mt-28'>
